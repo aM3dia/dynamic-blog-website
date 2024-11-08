@@ -1,0 +1,8 @@
+Project: Dynamic Blog Website
+
+Objective: Develop a multi-page blog website that utilizes CRUD functionality for blog posts.
+
+Pages to create:
+    - homepage with list of blog posts (index.html)
+    - new post page for creating new blog posts (new-post.html)
+    - post page to view and edit individual blog posts (post.html)
