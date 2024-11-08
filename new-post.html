@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>New Post</h1>
+        <nav>
+            <a href="index.html">Blogs</a> |
+            <a href="new-post.html">Create Post</a>
+        </nav>
+    </header>
+    <main>
+        <form id="post-form">
+            <label for="image">Image</label>
+            <input type="file" id="image" accept="image/*">
+
+            <label for="title">Title:</label>
+            <input type="text" id="post-title" placeholder="Title of blog post" required>
+            
+            <label for="content">Content:</label>
+            <textarea id="post-content" rows="10" placeholder="Write your blog content here..." required></textarea>
+            
+            <div class="button-container">
+                <button type="submit" id="upload-post-btn" class="button">Upload</button>
+                <button type="delete" id="cancel-post-btn" class="button">Cancel</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Anupa Ragoonanan</p>
+    </footer>
+    <script src="new-post.js"></script>
+</body>
+</html>
