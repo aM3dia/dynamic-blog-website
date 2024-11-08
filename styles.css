@@ -1,1 +1,271 @@
+/*general styling*/
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4ef;
+}
 
+/*header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #b3a282;
+    color: #fff;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*main*/
+main {
+    margin: 50px;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    padding: 1px;
+    background: #b3a282;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/*form styling*/
+#post-form, #edit-post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    width: 500px;
+    max-width: 100%;  
+}
+
+#post-content {
+    height: 500px;
+}
+
+/*homepage*/
+h2 {
+    text-align: left;
+}
+
+.post-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*blog posts*/
+#post-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#post-list li {
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#post-list a:visited {
+    color: #0037ce;
+}
+
+.post-box {
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.post-box h2 {
+    margin: 0 0 10px;
+}
+
+.post-box p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+#post-list img.post-image {
+    width: 200px;
+    height: 100%;
+    padding-right: 15px;
+    float: left;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.delete-btn {
+    background: #ff0019f1;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+/*new post*/
+#post-form button[type="submit"] {
+    padding: 10px;
+    background-color: #00c210;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+}
+
+#post-form button[type="submit"]:hover {
+    background-color: #00a50e;
+}
+
+/*post*/
+img.post-image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#edit-post-form .button-container {
+    display: flex;
+    gap: 15px;
+}
+
+#edit-post-form .button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#edit-post-form button[type="submit"] {
+    padding: 10px;
+    background-color: #0066ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+}
+
+#edit-post-form button[type="submit"]:hover {
+    background-color: #0037ce;
+}
+
+#cancel-post-btn {
+    padding: 10px;
+    background-color: #ff0019f1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+}
+
+#cancel-post-btn:hover {
+    background-color: #c82333;
+}
+
+/*responsive styling*/
+@media (max-width: 768px) {
+    body {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .post {
+        padding: 5px;
+    }
+
+    header, nav a {
+        display: block;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
