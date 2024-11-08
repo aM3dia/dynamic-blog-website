@@ -1,0 +1,54 @@
+/*general styling*/
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4ef;
+}
+
+/*header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #b3a282;
+    color: #fff;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*main*/
+main {
+    margin: 50px;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    padding: 1px;
+    background: #b3a282;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
